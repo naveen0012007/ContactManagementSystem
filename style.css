@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(56, 229, 236, 1) 93%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.list {
+  background-color: beige;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.cointainer {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.btn,
+.inputText {
+  width: 20%;
+  margin: 10px;
+  padding: 4px 0;
+}
+
+.btn {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+#inputText,
+#inputNumber {
+  padding: 4px 0;
+  width: 50%;
+  float: right;
+}
+
+.toDoContainer {
+  margin-top: 50px;
+}
+
+.nameContent {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.nameContent label {
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/* js */
+.context {
+  display: flex;
+  background: cadetblue;
+  width: 100%;
+}
+
+.dataName,
+.dataNumber {
+  background-color: beige;
+  width: 50%;
+  border: 2px solid;
+  margin: 12px;
+  padding: 10px;
+}
+
+.todo {
+  width: 80%;
+}
+
+.button,
+.edit,
+.delete {
+  background-color: blue;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  margin: 13px;
+  width: 9%;
+  padding: 10px;
+}
+
+.edit {
+  padding: 10px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.modelConitainer {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 21px;
+  width: 40%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  background: cadetblue;
+}
+
+.close-modal {
+  padding: 10px;
+  position: absolute;
+  top: 22px;
+  right: 20px;
+}
+
+.modelLable {
+  margin-right: 10px;
+}
+
+#modalBtnName,
+#modalBtnNumber {
+  width: 100%;
+  margin-top: 10px;
+  padding: 7px;
+}
+
+.hidden {
+  display: none;
+}

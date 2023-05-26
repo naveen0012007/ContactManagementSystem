@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Management System</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <section class="list">
+      <h1>Contact Management System</h1>
+      <div class="cointainer">
+        <div class="nameContent">
+          <label for="" class="contextName">Name :</label>
+          <input type="text" id="inputText" placeholder="name" />
+        </div>
+        <div class="nameContent">
+          <label for="" class="contextName">Phone number :</label>
+          <input type="number" id="inputNumber" placeholder="phone number" />
+        </div>
+        <br />
+        <button class="btn">submit</button>
+      </div>
+      <div class="todo" id="toDoContainer"></div>
+    </section>
+    <section>
+      <div class="modal hidden">
+        <button class="close-modal closeModal">&times;</button>
+        <div class="modelConitainer nameContent">
+          <h2>update contact</h2>
+
+          <div>
+            <label for="" class="modelLable">update name :</label>
+            <input type="text" id="modalBtnName" />
+          </div>
+          <div>
+            <label for="" class="modelLable">update number:</label>
+            <input type="number" id="modalBtnNumber" />
+          </div>
+          <button class="modalButton closeModal btn">submit</button>
+        </div>
+      </div>
+    </section>
+    <div class="overlay hidden"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
